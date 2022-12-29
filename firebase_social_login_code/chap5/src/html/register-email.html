@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social login</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="title flex-justify-between">
+      <h1 id="top-message">メールアドレスの登録</h1>
+      <button class="btn btn-logout" id="logout">ログアウト</button>
+    </div>
+    <p>
+      メールアドレスの登録と確認が必要です。確認用のURLを送信します。
+    </p>
+    <div>
+      <form name="emailForm" id="emailForm">
+        <input class="form-control" id="email" name="email" type="email">
+        <button class="btn" type="submit">送信</button>
+      </form>
+    </div>
+  </div>
+  <!-- jsの読み込み -->
+  <script src="register-email.bundle.js"></script>
+</body>
+
+</html>

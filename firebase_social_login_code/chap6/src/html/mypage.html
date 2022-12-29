@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Sign In Example</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="title flex-justify-between">
+      <h1 id="top-message"></h1>
+      <button class="btn btn-logout" id="logout">ログアウト</button>
+    </div>
+    <h2>連携状態</h2>
+    <div>
+      <table>
+        <tr>
+          <th>Google</th>
+          <th id="googleDisplayName"></th>
+          <th id="googleLinkState"></th>
+          <th><button class="btn btn-table" id="googleLinkButton"></button></th>
+        </tr>
+        <tr>
+          <th>GitHub</th>
+          <th id="githubDisplayName"></th>
+          <th id="githubLinkState"></th>
+          <th><button class="btn btn-table" id="githubLinkButton"></button></th>
+        </tr>
+      </table>
+    </div>
+    <h2>メールアドレス</h2>
+    <div class="currentEmail">
+      <span>現在のメールアドレス</span>
+      <span id="currentEmail"></span>
+    </div>
+    <div>
+      <form name="emailForm" id="emailForm">
+        <label for="email">新しいメールアドレス</label>
+        <input class="form-control" id="email" name="email" type="email">
+        <button class="btn" type="submit">変更</button>
+      </form>
+    </div>
+    <h2>退会</h2>
+    <p>メールアドレス、連携状態が破棄されます</p>
+    <button class="btn" id="deleteUser">
+      退会
+    </button>
+  </div>
+  <!-- jsの読み込み -->
+  <script src="mypage.bundle.js"></script>
+</body>
+
+</html>

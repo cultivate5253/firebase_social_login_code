@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social login</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="content" id="loginPage">
+    <div class="title">
+      <h1>ログイン</h1>
+    </div>
+    <div>
+      <button class="btn btn-google-login" id="googleLogin">
+        Googleでログイン/新規登録
+      </button>
+    </div>
+    <h2>メールリンクログイン</h2>
+    <p>登録しているメールアドレスにログイン用のURLを送信します。</p>
+    <div>
+      <form name="recoveryEmailForm" id="recoveryEmailForm">
+        <label for="recoveryEmail">登録しているメールアドレス</label>
+        <input class="form-control" id="recoveryEmail" name="recoveryEmail" type="email">
+        <button class="btn" type="submit">送信</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="content" id="myPage">
+    <div class="title flex-justify-between">
+      <h1><span id="name"></span>さんでログイン中です</h1>
+      <button class="btn btn-logout" id="logout">
+        ログアウト
+      </button>
+    </div>
+    <h2>メールアドレス</h2>
+    <div class="currentEmail">
+      <span>現在のメールアドレス</span>
+      <span id="currentEmail"></span>
+    </div>
+    <h2>退会</h2>
+    <p>メールアドレス、連携状態が破棄されます</p>
+    <button class="btn" id="deleteAccount">
+      退会
+    </button>
+  </div>
+  <!-- jsの読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>

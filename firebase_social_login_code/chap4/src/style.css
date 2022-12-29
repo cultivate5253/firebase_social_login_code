@@ -1,0 +1,85 @@
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+}
+
+.content {
+  background-color: #fff;
+  width: 600px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+  padding: 30px;
+}
+
+.title {
+  margin: 0 0 20px 0;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 50%;
+  padding: 15px;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.btn-google-login {
+  background-color: #2096f3;
+  color: #fff;
+}
+
+.btn-github-login {
+  margin: 10px 0 0 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-logout {
+  width: 20%;
+  padding: 0;
+}
+
+.btn-table {
+  width: auto;
+}
+
+.content p {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.content label {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.content th {
+  padding: 0 5px 0 0;
+}
+
+.form-control {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 10px 0;
+  width: 50%;
+  padding: 15px;
+  border: 1px solid #d1d1d1;
+  border-radius: 3px;
+}
+
+.link {
+  margin: 10px 10px 0;
+}
+
+.mail {
+}
